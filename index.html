@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trazadores ambientales · Water Congress 2026</title>
+<meta name="description" content="Selección y aplicación de trazadores ambientales para cuantificar filtraciones de relaves en acuíferos salinos. WES Perú · Water Congress 2026.">
+<meta property="og:title" content="Trazadores ambientales en acuíferos salinos · Water Congress 2026">
+<meta property="og:description" content="Cuando el fondo natural oculta la señal, los datos históricos permiten encontrar un trazador adaptado al sistema.">
+<meta property="og:image" content="assets/aerial.jpg">
+<meta name="theme-color" content="#020b2e">
+<link rel="icon" href="assets/wes-white.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span></span></div>
+
+<header class="topbar" id="topbar">
+  <img src="assets/congress-logo-white.png" alt="Water Congress 2026">
+  <img class="wes" src="assets/wes-white.png" alt="WES Perú">
+</header>
+
+<nav class="tracker" id="tracker" aria-label="Ruta metodológica">
+  <a href="#convencionales" data-s="1"><span>Caracterizar</span><b></b></a>
+  <a href="#molibdeno" data-s="2"><span>Discriminar</span><b></b></a>
+  <a href="#cuantificacion" data-s="3"><span>Cuantificar</span><b></b></a>
+  <a href="#validacion" data-s="4"><span>Validar</span><b></b></a>
+  <a href="#fraktal" data-s="5"><span>Operacionalizar</span><b></b></a>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="bg"></div><div class="shade"></div>
+  <div class="wrap">
+    <span class="kicker"><i data-lucide="droplets"></i>Water Congress 2026 · Water Management in Mining</span>
+    <h1>
+      <span class="line"><span>Selección y aplicación de</span></span>
+      <span class="line"><span class="aqua">trazadores ambientales</span></span>
+      <span class="line"><span>para cuantificar filtraciones</span></span>
+      <span class="line"><span>de relaves en <span class="gold">acuíferos salinos</span></span></span>
+    </h1>
+    <p class="tagline hero-fade">Cuando el fondo natural oculta la señal, los datos históricos permiten encontrar un trazador adaptado al sistema.</p>
+    <div class="meta hero-fade">
+      <img src="assets/wes-white.png" alt="WES">
+      <span class="sep"></span>
+      <div>
+        <strong>Mallén, Germán · Barba, Luis · Casadiegos, Luisa* · Téllez, Milena · Tueros, César</strong><br>
+        Water &amp; Environmental Services Perú · <em>Turning Data into Sustainable Water Decisions</em>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><div class="mouse"></div>SCROLL</div>
+</section>
+
+<!-- ============ DESAFIO ============ -->
+<section class="pin challenge" id="desafio">
+  <div class="photo"></div>
+  <div class="wrap split">
+    <div>
+      <span class="kicker"><i data-lucide="mountain"></i>El desafío hidroquímico</span>
+      <h2>Cuando el fondo natural ya es salino, <span class="gold">la señal de una filtración se esconde</span></h2>
+      <p class="lead">Baja recarga, largo tiempo de interacción agua–roca y aguas salinas naturales elevan Na⁺, Cl⁻, SO₄²⁻ y CE. <strong style="color:#fff">El agua asociada al relave también es mineralizada.</strong></p>
+      <div class="chips">
+        <span class="chip"><i data-lucide="sun"></i>Baja recarga</span>
+        <span class="chip"><i data-lucide="history"></i>Interacción agua–roca</span>
+        <span class="chip"><i data-lucide="waves"></i>Aguas salinas naturales</span>
+      </div>
+      <div class="callout" id="ch-callout">El reto no era detectar mineralización, sino <span class="gold">separar señales que se superponen.</span></div>
+    </div>
+    <div class="diagram">
+      <svg viewBox="0 0 600 470" role="img" aria-label="Dos fuentes con firmas mayoritarias semejantes convergen en el piezómetro de monitoreo">
+        <defs>
+          <marker id="ah-sky" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1c8fd6"/></marker>
+          <marker id="ah-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e4572e"/></marker>
+          <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <g id="ch-gw">
+          <rect x="10" y="10" width="270" height="200" rx="18" fill="rgba(28,143,214,.10)" stroke="#1c8fd6" stroke-width="2"/>
+          <circle cx="42" cy="44" r="20" fill="#1c8fd6"/>
+          <path d="M42 32c0 0-9 10-9 16a9 9 0 0 0 18 0c0-6-9-16-9-16z" fill="#fff"/>
+          <text x="72" y="51" fill="#fff" font-family="Oswald" font-size="19" font-weight="600">Agua subterránea natural</text>
+          <g fill="#1c8fd6" class="bars">
+            <rect x="38" y="83" width="38" height="95" rx="4"/><rect x="98" y="73" width="38" height="105" rx="4"/>
+            <rect x="158" y="98" width="38" height="80" rx="4"/><rect x="218" y="78" width="38" height="100" rx="4"/>
+          </g>
+          <g fill="#9fb2c8" font-size="12" text-anchor="middle"><text x="57" y="197">Na⁺</text><text x="117" y="197">Cl⁻</text><text x="177" y="197">SO₄²⁻</text><text x="237" y="197">CE</text></g>
+        </g>
+        <g id="ch-tl">
+          <rect x="320" y="10" width="270" height="200" rx="18" fill="rgba(228,87,46,.10)" stroke="#e4572e" stroke-width="2"/>
+          <circle cx="352" cy="44" r="20" fill="#e4572e"/>
+          <path d="M352 32c0 0-9 10-9 16a9 9 0 0 0 18 0c0-6-9-16-9-16z" fill="#fff"/>
+          <text x="382" y="51" fill="#fff" font-family="Oswald" font-size="19" font-weight="600">Agua asociada al relave</text>
+          <g fill="#e4572e" class="bars">
+            <rect x="348" y="73" width="38" height="105" rx="4"/><rect x="408" y="83" width="38" height="95" rx="4"/>
+            <rect x="468" y="68" width="38" height="110" rx="4"/><rect x="528" y="73" width="38" height="105" rx="4"/>
+          </g>
+          <g fill="#9fb2c8" font-size="12" text-anchor="middle"><text x="367" y="197">Na⁺</text><text x="427" y="197">Cl⁻</text><text x="487" y="197">SO₄²⁻</text><text x="547" y="197">CE</text></g>
+        </g>
+        <text x="300" y="242" fill="#9fb2c8" font-size="12" font-style="italic" text-anchor="middle">Firmas mayoritarias semejantes · esquema conceptual</text>
+        <path class="draw" d="M145 215C145 285 225 300 270 335" fill="none" stroke="#1c8fd6" stroke-width="4" stroke-linecap="round" marker-end="url(#ah-sky)"/>
+        <path class="draw" d="M455 215C455 285 375 300 330 335" fill="none" stroke="#e4572e" stroke-width="4" stroke-linecap="round" marker-end="url(#ah-red)"/>
+        <g id="ch-pz">
+          <rect x="150" y="345" width="300" height="118" rx="18" fill="rgba(123,79,214,.2)" stroke="#a98bff" stroke-width="2" filter="url(#glow)"/>
+          <circle cx="188" cy="383" r="20" fill="#7b4fd6"/>
+          <path d="M183 373h10M185 373v16a3 3 0 0 0 6 0v-16" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <text x="218" y="390" fill="#fff" font-family="Oswald" font-size="20" font-weight="600">Piezómetro de monitoreo</text>
+          <text x="300" y="440" fill="#f2b134" font-family="Oswald" font-size="21" font-weight="600" text-anchor="middle">¿Qué parte proviene del relave?</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJETIVOS ============ -->
+<section class="section glow-bg" id="objetivos">
+  <div class="wrap">
+    <span class="kicker" data-reveal><i data-lucide="target"></i>Objetivos de la ponencia</span>
+    <h2 data-reveal>Cuatro verbos guían la ponencia</h2>
+    <div class="goal" data-reveal>
+      <div class="ico"><i data-lucide="crosshair"></i></div>
+      <div>
+        <div class="label" style="color:var(--gold)">Objetivo general</div>
+        <p>Presentar un enfoque adaptativo para seleccionar, validar y aplicar trazadores ambientales en la identificación y cuantificación de filtraciones de relaves en acuíferos salinos, integrado en una herramienta de gestión de datos.</p>
+      </div>
+    </div>
+    <div class="objectives">
+      <svg class="wave" viewBox="0 0 1200 92" preserveAspectRatio="none" aria-hidden="true" style="top:0;height:92px">
+        <path id="obj-wave" d="M0 46 C100 10 200 10 300 46 S500 82 600 46 S800 10 900 46 S1100 82 1200 46" fill="none" stroke="#14a3a8" stroke-width="3" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <div class="obj-grid">
+        <div class="obj" data-reveal style="--c:#0e2a7a"><div class="node"><i data-lucide="layers"></i><em>1</em></div><h3>EXPLICAR</h3><p>Por qué la alta mineralización natural reduce la discriminación de la CE y de los iones mayoritarios.</p></div>
+        <div class="obj" data-reveal style="--c:var(--blue);--c2:#6fa8ff"><div class="node"><i data-lucide="scan-search"></i><em>2</em></div><h3>IDENTIFICAR</h3><p>Cómo el análisis sistemático de datos históricos señaló al Mo como el trazador de mejor desempeño local.</p></div>
+        <div class="obj" data-reveal style="--c:var(--teal);--c2:var(--aqua)"><div class="node"><i data-lucide="scale"></i><em>3</em></div><h3>CUANTIFICAR</h3><p>Aplicar un modelo de mezcla de dos componentes y las condiciones que controlan su confiabilidad.</p></div>
+        <div class="obj" data-reveal style="--c:var(--teal2);--c2:var(--aqua)"><div class="node"><i data-lucide="cog"></i><em>4</em></div><h3>IMPLEMENTAR</h3><p>Automatizar el análisis en Fraktal System: rápido, reproducible y útil para el monitoreo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METODOLOGIA (pinned) ============ -->
+<section class="pin method glow-bg" id="metodologia" style="--gx:80%;--gy:15%">
+  <div class="wrap">
+    <span class="kicker"><i data-lucide="route"></i>Metodología · cinco etapas de acción</span>
+    <h2>El Mo surgió de una evaluación estructurada, <span class="aqua">no de una elección previa</span></h2>
+    <div class="river-wrap">
+      <svg viewBox="0 0 1200 220" aria-hidden="true">
+        <defs><linearGradient id="rv" x1="0" x2="1"><stop offset="0" stop-color="#1c8fd6"/><stop offset=".6" stop-color="#14a3a8"/><stop offset="1" stop-color="#f2b134"/></linearGradient></defs>
+        <path id="river-bg" d="" fill="none" stroke="rgba(94,211,214,.14)" stroke-width="46" stroke-linecap="round"/>
+        <path id="river" d="" fill="none" stroke="url(#rv)" stroke-width="5" stroke-linecap="round"/>
+        <g id="river-nodes"></g>
+      </svg>
+    </div>
+    <div class="stage-panel card">
+      <div class="num" id="sp-num">01</div>
+      <div><h3 id="sp-title">Caracterizar</h3><p id="sp-text">Integrar hidroquímica histórica, fuentes de agua, condiciones hidrogeológicas, direcciones de flujo y estaciones de monitoreo.</p></div>
+    </div>
+    <div class="universal"><span class="ico"><i data-lucide="lightbulb"></i></span><p><strong>Ningún trazador es universal:</strong> su utilidad depende de las condiciones locales y de la caracterización de los componentes extremos.</p></div>
+  </div>
+</section>
+
+<!-- ============ CONVENCIONALES ============ -->
+<section class="section glow-bg" id="convencionales" data-stage="1">
+  <div class="wrap split rev">
+    <div class="card chart-card" data-reveal>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:8px">
+        <span class="label">Firmas hidroquímicas normalizadas</span>
+        <div class="legend"><span style="--c:var(--sky)">Fondo natural</span><span style="--c:var(--red)">Agua de relave</span></div>
+      </div>
+      <svg id="schoeller" viewBox="0 0 560 350" role="img" aria-label="Perfiles conceptuales superpuestos de agua subterránea natural y agua de relave">
+        <g stroke="rgba(255,255,255,.12)" stroke-dasharray="4 6">
+          <line x1="50" x2="450" y1="40" y2="40"/><line x1="50" x2="450" y1="100" y2="100"/><line x1="50" x2="450" y1="160" y2="160"/><line x1="50" x2="450" y1="220" y2="220"/><line x1="50" x2="450" y1="280" y2="280"/>
+        </g>
+        <text transform="translate(22 160) rotate(-90)" fill="#9fb2c8" font-size="12" text-anchor="middle">Concentración (escala log)</text>
+        <polygon class="env" points="70,96 160,106 250,136 340,121 430,171 430,219 340,169 250,184 160,154 70,144" fill="rgba(28,143,214,.28)"/>
+        <polygon class="env" points="70,81 160,94 250,124 340,141 430,156 430,204 340,189 250,172 160,142 70,129" fill="rgba(228,87,46,.26)"/>
+        <polyline class="draw" points="70,120 160,130 250,160 340,145 430,195" fill="none" stroke="#1c8fd6" stroke-width="3.5" stroke-linejoin="round"/>
+        <polyline class="draw" points="70,105 160,118 250,148 340,165 430,180" fill="none" stroke="#e4572e" stroke-width="3.5" stroke-linejoin="round"/>
+        <g class="dots" stroke="#020b2e" stroke-width="2">
+          <circle cx="70" cy="120" r="6" fill="#1c8fd6"/><circle cx="160" cy="130" r="6" fill="#1c8fd6"/><circle cx="250" cy="160" r="6" fill="#1c8fd6"/><circle cx="340" cy="145" r="6" fill="#1c8fd6"/><circle cx="430" cy="195" r="6" fill="#1c8fd6"/>
+          <circle cx="70" cy="105" r="6" fill="#e4572e"/><circle cx="160" cy="118" r="6" fill="#e4572e"/><circle cx="250" cy="148" r="6" fill="#e4572e"/><circle cx="340" cy="165" r="6" fill="#e4572e"/><circle cx="430" cy="180" r="6" fill="#e4572e"/>
+        </g>
+        <g id="overlap">
+          <line x1="58" x2="442" y1="250" y2="250" stroke="#a98bff" stroke-width="2"/><circle cx="58" cy="250" r="4" fill="#a98bff"/><circle cx="442" cy="250" r="4" fill="#a98bff"/>
+          <text x="250" y="270" fill="#a98bff" font-size="13" font-weight="700" text-anchor="middle">Zona de superposición: no permite atribuir el origen</text>
+        </g>
+        <g fill="#fff" font-family="Oswald" font-size="15" font-weight="600" text-anchor="middle">
+          <text x="70" y="310">CE</text><text x="160" y="310">STD</text><text x="250" y="310">Na⁺</text><text x="340" y="310">Cl⁻</text><text x="430" y="310">SO₄²⁻</text>
+        </g>
+        <g id="qcol">
+          <rect x="472" y="30" width="78" height="262" rx="16" fill="rgba(242,177,52,.08)" stroke="#f2b134" stroke-width="2" stroke-dasharray="7 6" filter="url(#glow)"/>
+          <text x="511" y="150" fill="#f2b134" font-family="Oswald" font-size="56" font-weight="700" text-anchor="middle">?</text>
+          <text x="511" y="200" fill="#f2b134" font-size="12" font-weight="700" text-anchor="middle">¿Señal</text>
+          <text x="511" y="216" fill="#f2b134" font-size="12" font-weight="700" text-anchor="middle">diferenciable?</text>
+        </g>
+        <text x="20" y="340" fill="#9fb2c8" font-size="11" font-style="italic">Esquema conceptual de perfiles tipo Schoeller (estadísticos representativos por fuente)</text>
+      </svg>
+    </div>
+    <div>
+      <span class="kicker" data-reveal><i data-lucide="activity"></i>Resultados · 01</span>
+      <h2 data-reveal>Los trazadores convencionales <span class="red">pierden resolución</span> en el fondo salino</h2>
+      <div class="kpi" data-reveal>
+        <div class="big">×<span data-count="3">3</span></div>
+        <p><b>SO₄²⁻ relave / fondo</b>≈ 1 500 vs 500 mg/L: contraste insuficiente</p>
+      </div>
+      <div class="row-item" data-reveal><span class="ico" style="--c:var(--blue)"><i data-lucide="layers"></i></span>Ambas fuentes comparten facies y un nivel de mineralización semejante.</div>
+      <div class="row-item" data-reveal><span class="ico" style="--c:var(--red)"><i data-lucide="triangle-alert"></i></span>Una muestra intermedia no se atribuye con confianza usando solo SO₄²⁻, Na⁺, Cl⁻ o CE.</div>
+      <div class="question" data-reveal>¿Qué especie mantiene una <span class="gold">diferencia clara</span> entre el fondo natural y el relave?</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOLIBDENO (pinned) ============ -->
+<section class="pin glow-bg" id="molibdeno" data-stage="2" style="--gx:70%;--gy:30%">
+  <div class="wrap">
+    <span class="kicker"><i data-lucide="sparkles"></i>Resultados · 02 · El Mo emerge de los datos</span>
+    <h2>Casi <span class="gold">dos órdenes de magnitud</span> de contraste</h2>
+    <div class="split rev" style="align-items:start">
+      <div class="card mo-stage">
+        <svg id="mo-axis" viewBox="0 0 640 310" role="img" aria-label="Escala logarítmica de Mo: fondo natural 0,03, piezómetro 0,15 y relave 1,2 mg/L">
+          <defs><linearGradient id="axg" x1="0" x2="1"><stop offset="0" stop-color="#1c8fd6"/><stop offset=".45" stop-color="#7b4fd6"/><stop offset="1" stop-color="#e4572e"/></linearGradient></defs>
+          <g id="mo-bracket">
+            <line x1="126" x2="414" y1="50" y2="50" stroke="#f2b134" stroke-width="3"/>
+            <path d="M126 42v16M414 42v16" stroke="#f2b134" stroke-width="3"/>
+            <text x="270" y="36" fill="#f2b134" font-family="Oswald" font-size="18" font-weight="600" text-anchor="middle">≈ 2 órdenes de magnitud</text>
+          </g>
+          <rect x="40" y="185" width="540" height="10" rx="5" fill="url(#axg)"/>
+          <g stroke="#fff" stroke-width="2"><line x1="40" x2="40" y1="176" y2="204"/><line x1="220" x2="220" y1="176" y2="204"/><line x1="400" x2="400" y1="176" y2="204"/><line x1="580" x2="580" y1="176" y2="204"/></g>
+          <g fill="#9fb2c8" font-size="13" text-anchor="middle"><text x="40" y="222">0,01</text><text x="220" y="222">0,1</text><text x="400" y="222">1</text><text x="580" y="222">10</text><text x="580" y="240" font-style="italic" font-size="11">mg Mo/L</text></g>
+          <g class="mo-pt" data-dir="-1">
+            <line x1="40" x2="148" y1="190" y2="190" stroke="#1c8fd6" stroke-width="7" stroke-linecap="round" class="eb"/>
+            <line x1="126" x2="126" y1="150" y2="176" stroke="#1c8fd6" stroke-dasharray="3 4" stroke-width="2"/>
+            <rect x="56" y="88" width="140" height="62" rx="12" fill="#06164a" stroke="#1c8fd6" stroke-width="2"/>
+            <text x="126" y="110" fill="#1c8fd6" font-family="Oswald" font-size="14" font-weight="600" text-anchor="middle">Fondo natural</text>
+            <text x="126" y="137" fill="#fff" font-family="Oswald" font-size="21" font-weight="600" text-anchor="middle">0,03 ± 0,01</text>
+            <circle cx="126" cy="190" r="13" fill="#1c8fd6" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+          </g>
+          <g class="mo-pt" data-dir="1">
+            <line x1="235" x2="266" y1="190" y2="190" stroke="#7b4fd6" stroke-width="7" stroke-linecap="round" class="eb"/>
+            <line x1="252" x2="252" y1="204" y2="238" stroke="#a98bff" stroke-dasharray="3 4" stroke-width="2"/>
+            <rect x="182" y="240" width="140" height="62" rx="12" fill="#06164a" stroke="#a98bff" stroke-width="2"/>
+            <text x="252" y="262" fill="#a98bff" font-family="Oswald" font-size="14" font-weight="600" text-anchor="middle">Piezómetro</text>
+            <text x="252" y="289" fill="#fff" font-family="Oswald" font-size="21" font-weight="600" text-anchor="middle">0,15 ± 0,03</text>
+            <circle cx="252" cy="190" r="13" fill="#7b4fd6" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+          </g>
+          <g class="mo-pt" data-dir="-1">
+            <line x1="400" x2="426" y1="190" y2="190" stroke="#e4572e" stroke-width="7" stroke-linecap="round" class="eb"/>
+            <line x1="414" x2="414" y1="150" y2="176" stroke="#e4572e" stroke-dasharray="3 4" stroke-width="2"/>
+            <rect x="344" y="88" width="140" height="62" rx="12" fill="#06164a" stroke="#e4572e" stroke-width="2"/>
+            <text x="414" y="110" fill="#e4572e" font-family="Oswald" font-size="14" font-weight="600" text-anchor="middle">Agua de relave</text>
+            <text x="414" y="137" fill="#fff" font-family="Oswald" font-size="21" font-weight="600" text-anchor="middle">1,2 ± 0,2</text>
+            <circle cx="414" cy="190" r="13" fill="#e4572e" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+          </g>
+        </svg>
+        <div class="contrast">
+          <span class="label">Contraste relave / fondo</span>
+          <div class="cbar" style="--c:var(--red);--w:7.5%"><b>SO₄²⁻</b><div class="track"><div class="fill"></div><span class="val red">×3</span></div></div>
+          <div class="cbar" style="--c:var(--gold);--w:85%"><b>Mo</b><div class="track"><div class="fill"></div><span class="val gold">×<span data-count="40">40</span></span></div></div>
+        </div>
+      </div>
+      <div>
+        <span class="label">Criterios de selección</span>
+        <div class="criteria" style="margin-top:14px">
+          <div class="crit card"><span class="ico" style="--c:var(--gold);color:var(--navy)"><i data-lucide="zap"></i></span><div><h3>Contraste frente al fondo</h3><p>≈ 1,2 mg/L en el relave frente a &lt; 0,05 mg/L en el agua natural</p></div><i class="ok" data-lucide="circle-check"></i></div>
+          <div class="crit card"><span class="ico" style="--c:var(--sky)"><i data-lucide="droplet"></i></span><div><h3>Alta solubilidad</h3><p>Se mantiene en solución como molibdato (MoO₄²⁻)</p></div><i class="ok" data-lucide="circle-check"></i></div>
+          <div class="crit card"><span class="ico" style="--c:var(--teal)"><i data-lucide="shield"></i></span><div><h3>Predominantemente conservativo</h3><p>Baja reactividad bajo las condiciones evaluadas</p></div><i class="ok" data-lucide="circle-check"></i></div>
+        </div>
+        <p class="note" style="margin-top:18px;font-size:15px">La clave no es que el Mo sea siempre el mejor trazador: los datos históricos revelan cuál discrimina en cada sistema.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESPACIAL / TEMPORAL ============ -->
+<section class="section glow-bg" id="espacial" data-stage="2" style="--gx:20%;--gy:70%">
+  <div class="wrap">
+    <span class="kicker" data-reveal><i data-lucide="map"></i>Resultados · 03</span>
+    <h2 data-reveal>Una señal útil es diferenciable y <span class="aqua">coherente en el espacio y el tiempo</span></h2>
+    <div class="split">
+      <div class="card map-card" data-reveal>
+        <svg id="map" viewBox="0 0 460 340" role="img" aria-label="Mapa conceptual con el depósito de relaves, estaciones de fondo natural y piezómetro gradiente abajo">
+          <defs><marker id="ah-aq" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5ed3d6"/></marker></defs>
+          <rect width="460" height="340" rx="14" fill="rgba(94,211,214,.04)"/>
+          <g id="contours" fill="none" stroke="rgba(94,211,214,.16)" stroke-width="1.2"></g>
+          <polygon points="60,60 125,38 190,62 200,112 145,150 78,136 48,96" fill="rgba(228,87,46,.25)" stroke="#e4572e" stroke-width="2" filter="url(#glow)"/>
+          <text x="124" y="92" fill="#ffb59c" font-family="Oswald" font-size="15" font-weight="600" text-anchor="middle">Depósito</text>
+          <text x="124" y="110" fill="#ffb59c" font-family="Oswald" font-size="15" font-weight="600" text-anchor="middle">de relaves</text>
+          <g stroke="#5ed3d6" stroke-width="3" fill="none" stroke-linecap="round" marker-end="url(#ah-aq)">
+            <path class="flowline" d="M205 160 C240 190 270 215 305 240"/>
+            <path class="flowline" d="M170 185 C205 215 240 240 280 262"/>
+            <path class="flowline" d="M240 140 C275 170 305 195 340 215"/>
+          </g>
+          <text x="300" y="175" fill="#5ed3d6" font-size="12" font-style="italic" font-weight="700">Flujo subterráneo</text>
+          <g class="pin-g" font-family="Oswald" font-weight="600">
+            <g><circle cx="196" cy="136" r="9" fill="#e4572e" stroke="#fff" stroke-width="3"/><text x="212" y="128" fill="#fff" font-size="14">FIL-DCor-02</text><text x="212" y="144" fill="#e4572e" font-size="11">Agua de relave</text></g>
+            <g><circle cx="330" cy="276" r="9" fill="#7b4fd6" stroke="#fff" stroke-width="3"/><text x="262" y="306" fill="#fff" font-size="14">Piezómetro objetivo</text><text x="262" y="322" fill="#a98bff" font-size="11">Muestra de mezcla</text></g>
+            <g><circle cx="380" cy="58" r="9" fill="#1c8fd6" stroke="#fff" stroke-width="3"/><text x="366" y="50" fill="#fff" font-size="14" text-anchor="end">S-COR-08-01</text><text x="366" y="66" fill="#6fb9ff" font-size="11" text-anchor="end">Fondo natural</text></g>
+            <g><circle cx="420" cy="104" r="9" fill="#1c8fd6" stroke="#fff" stroke-width="3"/><text x="406" y="98" fill="#fff" font-size="14" text-anchor="end">S-COR-08-01B</text><text x="406" y="114" fill="#6fb9ff" font-size="11" text-anchor="end">Fondo natural</text></g>
+            <g><circle cx="56" cy="268" r="9" fill="#1c8fd6" stroke="#fff" stroke-width="3"/><text x="72" y="264" fill="#fff" font-size="14">PMC-1</text><text x="72" y="280" fill="#6fb9ff" font-size="11">Fondo natural</text></g>
+          </g>
+          <text x="14" y="330" fill="#9fb2c8" font-size="10.5" font-style="italic">Esquema conceptual · posiciones ilustrativas</text>
+        </svg>
+      </div>
+      <div data-reveal>
+        <span class="label">Separación de extremos en el tiempo</span>
+        <p class="note" style="margin:4px 0 10px">Rangos representativos de Mo (mg/L, escala log)</p>
+        <svg id="bands" viewBox="0 0 460 290" role="img" aria-label="Bandas estables de Mo para relave, piezómetro y fondo natural a lo largo de las campañas">
+          <g stroke="rgba(255,255,255,.12)" stroke-dasharray="4 6"><line x1="55" x2="455" y1="260" y2="260"/><line x1="55" x2="455" y1="185" y2="185"/><line x1="55" x2="455" y1="110" y2="110"/><line x1="55" x2="455" y1="35" y2="35"/></g>
+          <g fill="#9fb2c8" font-size="12" text-anchor="end"><text x="45" y="264">0,01</text><text x="45" y="189">0,1</text><text x="45" y="114">1</text><text x="45" y="39">10</text></g>
+          <g class="band"><rect x="60" y="99" width="390" height="11" fill="rgba(228,87,46,.35)" stroke="#e4572e"/><line x1="60" x2="450" y1="104" y2="104" stroke="#e4572e" stroke-width="2.5"/><text x="450" y="90" fill="#e4572e" font-family="Oswald" font-size="14" font-weight="600" text-anchor="end">Relave · 1,2 ± 0,2</text></g>
+          <g class="band"><rect x="60" y="166" width="390" height="13" fill="rgba(123,79,214,.35)" stroke="#a98bff"/><line x1="60" x2="450" y1="172" y2="172" stroke="#a98bff" stroke-width="2.5"/><text x="450" y="157" fill="#a98bff" font-family="Oswald" font-size="14" font-weight="600" text-anchor="end">Piezómetro · 0,15 ± 0,03</text></g>
+          <g class="band"><rect x="60" y="215" width="390" height="22" fill="rgba(28,143,214,.3)" stroke="#1c8fd6"/><line x1="60" x2="450" y1="224" y2="224" stroke="#1c8fd6" stroke-width="2.5"/><text x="450" y="207" fill="#6fb9ff" font-family="Oswald" font-size="14" font-weight="600" text-anchor="end">Fondo · 0,03 ± 0,01</text></g>
+          <text x="455" y="284" fill="#9fb2c8" font-size="11" font-style="italic" text-anchor="end">Campañas de monitoreo →</text>
+        </svg>
+        <div class="chain">
+          <span style="--c:var(--blue)">Diferenciable</span><span class="op">+</span>
+          <span style="--c:var(--teal)">Coherente con el flujo</span><span class="op">+</span>
+          <span style="--c:var(--teal2)">Estable en el tiempo</span><span class="op">=</span>
+          <span class="res">Señal útil</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUANTIFICACION (pinned) ============ -->
+<section class="pin glow-bg" id="cuantificacion" data-stage="3" style="--gx:30%;--gy:40%">
+  <div class="wrap">
+    <span class="kicker"><i data-lucide="scale"></i>Resultados · 04 · Modelo de mezcla de dos componentes</span>
+    <h2>De la concentración a la <span class="red">proporción de mezcla</span></h2>
+    <div class="split">
+      <div>
+        <svg id="sankey" viewBox="0 0 540 400" role="img" aria-label="Flujos proporcionales: 89 % agua subterránea natural y 11 % agua asociada al relave en el piezómetro">
+          <defs><clipPath id="sk-clip"><rect id="sk-rect" x="0" y="0" width="540" height="400"/></clipPath></defs>
+          <g clip-path="url(#sk-clip)">
+            <path id="sk-gw" fill="rgba(28,143,214,.45)"/>
+            <path id="sk-tl" fill="rgba(228,87,46,.55)"/>
+          </g>
+          <rect x="20" y="22" width="16" height="33" rx="5" fill="#e4572e"/>
+          <rect x="20" y="118" width="16" height="267" rx="5" fill="#1c8fd6"/>
+          <rect x="420" y="70" width="22" height="300" rx="7" fill="#7b4fd6" filter="url(#glow)"/>
+          <text x="46" y="16" fill="#e4572e" font-size="14" font-weight="700">Agua asociada al relave <tspan fill="#cfdcea" font-weight="400">· 1,2 mg Mo/L</tspan></text>
+          <text x="52" y="345" fill="#fff" font-size="14" font-weight="700">Agua subterránea natural</text>
+          <text x="52" y="364" fill="#e6f1ff" font-size="13">0,03 mg Mo/L</text>
+          <text x="408" y="60" fill="#ff8a66" font-family="Oswald" font-size="17" font-weight="600" text-anchor="end">≈ 11 %</text>
+          <text x="404" y="245" fill="#fff" font-family="Oswald" font-size="38" font-weight="600" text-anchor="end">≈ 89 %</text>
+          <text x="452" y="200" fill="#a98bff" font-size="13" font-weight="700">Piezómetro</text>
+          <text x="452" y="232" fill="#fff" font-family="Oswald" font-size="30" font-weight="600">0,15</text>
+          <text x="452" y="250" fill="#9fb2c8" font-size="12">mg Mo/L</text>
+        </svg>
+      </div>
+      <div>
+        <span class="label">Aporte estimado</span>
+        <div class="result-num" id="res-num">≈ 10–11<small> %</small></div>
+        <p class="lead" style="margin-top:10px">de agua asociada al relave en el piezómetro gradiente abajo</p>
+        <span class="pp">± 3 PUNTOS PORCENTUALES</span>
+        <div class="card formula">
+          <div class="f1">f = (C<sub>m</sub> − C<sub>n</sub>) / (C<sub>r</sub> − C<sub>n</sub>)</div>
+          <div class="f2">= (0,15 − 0,03) / (1,2 − 0,03) = 0,12 / 1,17 ≈ 0,10</div>
+        </div>
+        <div class="stack" id="stack"><div class="gw">≈ 89 % agua subterránea local</div><div class="tl">11</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALIDACION ============ -->
+<section class="section glow-bg" id="validacion" data-stage="4" style="--gx:75%;--gy:25%">
+  <div class="wrap">
+    <span class="kicker" data-reveal><i data-lucide="shield-check"></i>Resultados · 05</span>
+    <h2 data-reveal>Una estimación respaldada por evidencias, <span class="aqua">no una medición directa</span></h2>
+    <div class="split" style="align-items:start">
+      <div class="tri" id="tri" style="position:relative;aspect-ratio:500/470;max-width:520px;width:100%;margin-inline:auto">
+        <svg viewBox="0 0 500 470" style="position:absolute;inset:0;width:100%;height:100%" aria-hidden="true">
+          <polygon points="250,70 80,320 420,320" fill="rgba(20,163,168,.08)"/>
+          <polygon class="draw" points="250,70 80,320 420,320" fill="none" stroke="#14a3a8" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="250" cy="237" r="62" fill="#06164a" stroke="#e4572e" stroke-width="3" filter="url(#glow)"/>
+          <text x="250" y="240" fill="#ff7a52" font-family="Oswald" font-size="27" font-weight="700" text-anchor="middle">≈ 10–11 %</text>
+          <text x="250" y="262" fill="#9fb2c8" font-size="13" text-anchor="middle">estimación</text>
+        </svg>
+        <div class="tnode" style="left:50%;top:14.9%"><span class="ico" style="--c:#0e2a7a"><i data-lucide="mountain-snow"></i></span></div>
+        <div class="tnode" style="left:16%;top:68%"><span class="ico" style="--c:var(--blue)"><i data-lucide="flask-conical"></i></span></div>
+        <div class="tnode" style="left:84%;top:68%"><span class="ico" style="--c:var(--teal)"><i data-lucide="atom"></i></span></div>
+        <div class="tlabel" style="left:60%;top:3%;text-align:left"><h3>Hidrogeología</h3><p>Flujo y posición de estaciones</p><span class="badge">INTEGRADA</span></div>
+        <div class="tlabel" style="left:0;top:78%;text-align:center;width:36%"><h3>Hidroquímica</h3><p>Consistencia histórica</p><span class="badge">INTEGRADA</span></div>
+        <div class="tlabel" style="right:0;top:78%;text-align:center;width:40%"><h3>Isótopos estables</h3><p>δ²H, δ¹⁸O y sulfato</p><span class="badge ind">LÍNEA INDEPENDIENTE</span></div>
+      </div>
+      <div>
+        <span class="label" data-reveal>Fuentes de incertidumbre</span>
+        <div class="unc" style="margin-top:14px">
+          <div class="card" data-reveal><span class="ico" style="--c:var(--red)"><i data-lucide="trending-down"></i></span><div><h3>Adsorción parcial del Mo</h3><p>En materiales arcillosos podría reducir la concentración observada: posible subestimación del aporte.</p></div></div>
+          <div class="card" data-reveal><span class="ico" style="--c:var(--blue)"><i data-lucide="sliders-horizontal"></i></span><div><h3>Variabilidad de los extremos</h3><p>La representatividad del relave y del fondo natural controla directamente la fracción estimada.</p></div></div>
+          <div class="card" data-reveal><span class="ico" style="--c:var(--purp)"><i data-lucide="microscope"></i></span><div><h3>Incertidumbre analítica</h3><p>Propagada en el balance de masa: ± 3 puntos porcentuales.</p></div></div>
+        </div>
+        <p data-reveal style="margin-top:22px;font-size:18px;font-style:italic">Reconocer estos límites <strong class="aqua">fortalece, y no debilita,</strong> la interpretación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULADORA ============ -->
+<section class="section glow-bg" id="calculadora" style="--gx:15%;--gy:30%">
+  <div class="wrap">
+    <span class="kicker" data-reveal><i data-lucide="calculator"></i>Pruébelo usted</span>
+    <h2 data-reveal>Calculadora de mezcla <span class="gold">de dos componentes</span></h2>
+    <p class="lead" data-reveal>Mueva los extremos y la muestra para ver cómo cambia la fracción estimada y su incertidumbre. Valores iniciales: caso de estudio.</p>
+    <div class="card calc" style="margin-top:34px" data-reveal>
+      <div>
+        <div class="slider" style="--c:var(--red)">
+          <div class="top"><span>C<sub>r</sub> · Agua asociada al relave</span><b><output id="o-cr">1,20</output> <small>± 0,2 mg/L</small></b></div>
+          <input type="range" id="cr" min="0.4" max="2.5" step="0.01" value="1.2" aria-label="Mo en el agua de relave (mg/L)">
+        </div>
+        <div class="slider" style="--c:var(--sky)">
+          <div class="top"><span>C<sub>n</sub> · Agua subterránea natural</span><b><output id="o-cn">0,030</output> <small>± 0,01 mg/L</small></b></div>
+          <input type="range" id="cn" min="0.005" max="0.12" step="0.001" value="0.03" aria-label="Mo en el agua subterránea natural (mg/L)">
+        </div>
+        <div class="slider" style="--c:#a98bff">
+          <div class="top"><span>C<sub>m</sub> · Muestra del piezómetro</span><b><output id="o-cm">0,150</output> <small>± 0,03 mg/L</small></b></div>
+          <input type="range" id="cm" min="0.01" max="1.5" step="0.005" value="0.15" aria-label="Mo en la muestra del piezómetro (mg/L)">
+        </div>
+        <button id="reset" class="chip" style="cursor:pointer;color:#fff;font:inherit;font-size:14px"><i data-lucide="rotate-ccw"></i>Volver al caso de estudio</button>
+      </div>
+      <div class="calc-out">
+        <span class="label">Fracción de agua asociada al relave</span>
+        <div class="result-num"><span id="o-f">10,3</span><small> %</small></div>
+        <span class="pp" id="o-s">± 3,2 PUNTOS PORCENTUALES</span>
+        <div class="lever">
+          <svg viewBox="0 0 600 110" aria-hidden="true">
+            <defs><linearGradient id="lv" x1="0" x2="1"><stop offset="0" stop-color="#1c8fd6"/><stop offset="1" stop-color="#e4572e"/></linearGradient></defs>
+            <rect x="30" y="48" width="540" height="10" rx="5" fill="url(#lv)"/>
+            <circle cx="30" cy="53" r="12" fill="#1c8fd6" stroke="#fff" stroke-width="3"/>
+            <circle cx="570" cy="53" r="12" fill="#e4572e" stroke="#fff" stroke-width="3"/>
+            <text x="30" y="90" fill="#6fb9ff" font-size="13" text-anchor="middle">Fondo</text>
+            <text x="570" y="90" fill="#ff8a66" font-size="13" text-anchor="middle">Relave</text>
+            <g id="lv-m"><line x1="0" x2="0" y1="20" y2="86" stroke="#a98bff" stroke-width="2" stroke-dasharray="3 3"/><circle cx="0" cy="53" r="13" fill="#7b4fd6" stroke="#fff" stroke-width="3"/><text x="0" y="14" fill="#a98bff" font-size="13" font-weight="700" text-anchor="middle">Piezómetro</text></g>
+          </svg>
+        </div>
+        <div class="stack" style="margin-top:6px"><div class="gw" id="o-gw" style="flex:89">89 %</div><div class="tl" id="o-tl" style="flex:11">11</div></div>
+        <p class="warn" id="warn"></p>
+        <p class="note">f = (C<sub>m</sub> − C<sub>n</sub>)/(C<sub>r</sub> − C<sub>n</sub>); σ<sub>f</sub> por propagación de primer orden. Herramienta didáctica: el cálculo operativo se realiza en Fraktal System.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRAKTAL ============ -->
+<section class="section glow-bg" id="fraktal" data-stage="5" style="--gx:85%;--gy:20%">
+  <div class="wrap">
+    <span class="kicker" data-reveal><i data-lucide="cpu"></i>Implementación operativa</span>
+    <h2 data-reveal>Fraktal System: el método convertido en <span class="gold">un flujo reproducible</span></h2>
+    <div class="split rev" style="margin-top:30px">
+      <div class="persp">
+        <div class="browser" id="browser">
+          <div class="bar"><i style="--c:#e4572e"></i><i style="--c:#f2b134"></i><i style="--c:#14a3a8"></i><span>Sistema de Monitoreo de Filtración de Relaves</span></div>
+          <img src="assets/fraktal.jpg" alt="Módulo de Fraktal System para el monitoreo de filtración de relaves" loading="lazy">
+        </div>
+      </div>
+      <div class="values">
+        <div data-reveal><span class="ico" style="--c:var(--blue)"><i data-lucide="copy"></i></span><div><h3>Reproducible</h3><p>Estandariza las operaciones repetitivas bajo reglas comunes.</p></div></div>
+        <div data-reveal><span class="ico" style="--c:var(--teal)"><i data-lucide="route"></i></span><div><h3>Trazable</h3><p>Conserva las entradas y permite la revisión por distintos usuarios.</p></div></div>
+        <div data-reveal><span class="ico" style="--c:var(--teal2)"><i data-lucide="chart-line"></i></span><div><h3>Comparable</h3><p>Contrasta campañas y estaciones; se actualiza con cada nuevo dato.</p></div></div>
+        <div class="caution" data-reveal><i data-lucide="user-check"></i><span><strong>No reemplaza el criterio hidrogeológico:</strong> lo hace repetible.</span></div>
+      </div>
+    </div>
+    <div class="steps" id="steps">
+      <div class="step"><i data-lucide="upload"></i><b>Cargar</b></div>
+      <div class="step"><i data-lucide="mouse-pointer-click"></i><b>Seleccionar</b></div>
+      <div class="step"><i data-lucide="list-checks"></i><b>Verificar</b></div>
+      <div class="step"><i data-lucide="calculator"></i><b>Calcular</b></div>
+      <div class="step"><i data-lucide="eye"></i><b>Visualizar</b></div>
+      <div class="step"><i data-lucide="file-text"></i><b>Reportar</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCLUSIONES ============ -->
+<section class="section glow-bg" id="conclusiones">
+  <div class="wrap">
+    <span class="kicker" data-reveal><i data-lucide="flag"></i>Conclusiones</span>
+    <h2 data-reveal>Tres conclusiones que responden a los objetivos</h2>
+    <div class="concl-grid">
+      <div class="card concl" data-reveal><span class="n">01</span><span class="ico" style="--c:#0e2a7a"><i data-lucide="layers"></i></span><h3>El fondo salino oculta la señal</h3><p>En acuíferos salinos, la CE y los iones mayoritarios pierden capacidad de discriminación.</p><div class="tags"><span><i data-lucide="circle-check"></i>Explicar</span></div></div>
+      <div class="card concl" data-reveal><span class="n">02</span><span class="ico" style="--c:var(--blue)"><i data-lucide="scan-search"></i></span><h3>Los datos revelan el trazador</h3><p>El Mo fue la señal más diferenciable y permitió estimar aportes del orden de 10–11 % gradiente abajo.</p><div class="tags"><span><i data-lucide="circle-check"></i>Identificar</span><span><i data-lucide="circle-check"></i>Cuantificar</span></div></div>
+      <div class="card concl" data-reveal><span class="n">03</span><span class="ico" style="--c:var(--teal)"><i data-lucide="cog"></i></span><h3>Del dato a la decisión</h3><p>Trazador, modelo conceptual, validación y automatización: información oportuna y reproducible.</p><div class="tags"><span><i data-lucide="circle-check"></i>Implementar</span></div></div>
+    </div>
+    <div class="transfer" data-reveal>
+      <span class="ico"><i data-lucide="route"></i></span>
+      <div><h3>El enfoque es transferible; <span class="gold">el trazador no lo es de forma automática.</span></h3>
+      <p>En cada proyecto debe repetirse la evaluación de contraste, conservación y representatividad de los extremos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="closing" id="contacto">
+  <div class="bg"></div><div class="shade"></div>
+  <div class="wrap">
+    <div>
+      <h2 data-reveal>GRACIAS</h2>
+      <div class="q" data-reveal>¿Preguntas?</div>
+      <div class="card quote" data-reveal>“Cuando el fondo natural oculta la señal, los datos históricos permiten encontrar un trazador adaptado al sistema.”</div>
+      <div class="contacts" data-reveal>
+        <a href="mailto:hidro@wes.com.pe"><i data-lucide="mail"></i>hidro@wes.com.pe</a>
+        <a href="https://wes.com.pe" target="_blank" rel="noopener"><i data-lucide="globe"></i>wes.com.pe</a>
+        <a href="https://www.linkedin.com/company/wes-consultores/" target="_blank" rel="noopener"><i data-lucide="linkedin"></i>linkedin.com/company/wes-consultores</a>
+      </div>
+    </div>
+    <div class="qr" data-reveal>
+      <img src="assets/qr.png" alt="Código QR de WES">
+      <p>Luisa Casadiegos · WES Perú</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>14th International Congress on Water Management in Mining and Industrial Processes · Water Congress 2026</span>
+    <img src="assets/partners.png" alt="CRHIAM · SMI Chile · Universidad Nacional de San Juan · IHE Delft · GECAMIN">
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
